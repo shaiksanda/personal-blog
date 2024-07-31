@@ -12,9 +12,8 @@
 .mentor-container {
   color: white;
 
-  width: 95%;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 100%;
+
   padding: 10px;
   border-radius: 10px;
   background: linear-gradient(to right, skyblue, dodgerblue);
@@ -45,7 +44,7 @@
   }
 }
 .mentor-container p {
-  font-size: 1.5rem; /* Base font size for readability */
+  font-size: 1rem; /* Base font size for readability */
   color: black; /* White color for better contrast */
   font-weight: bold;
   margin: 6px;
