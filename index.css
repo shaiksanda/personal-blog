@@ -38,8 +38,8 @@ html {
     width: 100px;
   }
   .image:hover {
-    width: 1200px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     transform: scale(1.02);
   }
 }
@@ -140,7 +140,7 @@ html {
 }
 
 .gradient-green-button {
-  background-color: black;
+  background-color: blueviolet;
   border: none;
   color: whitesmoke; /* Initial text color */
   padding: 15px 30px;
@@ -239,7 +239,8 @@ summary {
   color: #fff;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* Projects section */
@@ -267,6 +268,7 @@ summary {
   border-radius: 20px !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 90% !important;
 }
 
 .card:hover {
@@ -298,20 +300,36 @@ summary {
   color: #ccc;
 }
 
+.card-content:hover {
+  background-color: #ffffff;
+}
 .card:hover .card-text {
   font-family: 'Bree Serif';
 }
 
+.image-website {
+  border-radius: 10px;
+}
+
 #skillsSection {
   padding: 2rem;
-  background: linear-gradient(to right, #9acd32, #002e00);
+  background: linear-gradient(
+    to right,
+    #87ceeb,
+    #1e90ff
+  ); /* Sky Blue to Dodger Blue */
+
+  border-radius: 10px;
+
+  width: 100%;
   /* Light background color */
 }
 
 #skillsSection h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #333; /* Dark text color */
+  color: #00008b; /* Dark Blue */
+  /* Dark text color */
 }
 
 #skillsSection h3 {
@@ -336,14 +354,19 @@ summary {
 }
 
 .list-group-item:hover {
-  background-color: pink; /* Light blue on hover */
+  background-color: #ffd700; /* Light blue on hover */
   transform: scale(1.03);
   cursor: pointer;
+}
+
+.list-group-item:hover .list-group-item span {
+  color: white;
 }
 
 .list-group-item i {
   margin-right: 15px;
   font-size: 1.5rem;
+  color: whitesmoke;
   color: #007bff; /* Bootstrap primary color */
 }
 
@@ -360,7 +383,7 @@ summary {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #00ff00 !important; /* Dark text color */
+  color: #00008b /* Dark Blue */ !important; /* Dark text color */
   font-family: 'Bree Serif'; /* Font family */
 }
 
