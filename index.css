@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+.web-development {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 body,
 html {
   margin: 0;
@@ -154,10 +159,11 @@ html {
   text-decoration: none; /* Initial text decoration */
 }
 
-.card:hover .gradient-green-button {
+.card-body:hover .gradient-green-button {
   background: radial-gradient(circle, #00ff00, #32cd32, #004d00);
   font-family: 'Bree Serif';
   transform: scale(2.01);
+
   color: white; /* Ensure text color remains white on hover */
   text-decoration: none; /* Ensure text decoration remains none on hover */
 }
@@ -269,13 +275,17 @@ summary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 90% !important;
+  display: flex;
+  flex-direction: column;
 }
 
-.card:hover {
-  background-color: #00008b; /* Light blue on hover */
-  transform: scale(1.03);
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
 }
-.card:hover .card-title {
+
+.card-body:hover .card-title {
   color: #00ff00;
   font-family: 'Bree Serif';
   transform: scale(1.02);
@@ -298,6 +308,13 @@ summary {
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: #ccc;
+}
+.card-body:hover {
+  background-color: #00008b; /* Light blue on hover */
+  transform: scale(1.03);
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
 .card-content:hover {
