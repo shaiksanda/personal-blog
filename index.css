@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #87ceeb, #00bfff);
+}
+
+.nav-heading-1 {
+  color: #fff !important;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.nav-heading-1:hover {
+  color: black !important;
+}
+
+.image {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.image:hover {
+  width: 70px;
+  height: 70px;
+  transform: scale(1.02);
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    width: 100px;
+  }
+  .image:hover {
+    width: 1200px;
+    height: 120px;
+    transform: scale(1.02);
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navbar-toggler-1 {
+  border-color: transparent; /* Remove the border */
+  outline: none; /* Remove the outline */
+}
+
+.title-heading {
+  font-family: 'Roboto';
+  color: grey;
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.title-heading:hover {
+  color: #191970;
+  font-family: 'Bree Serif';
+  font-size: 28px;
+  transform: scale(1.05);
+}
+
+.home-section {
+  position: relative;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #87ceeb, #0000ff);
+}
+.main-heading {
+  font-family: 'Roboto', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+  color: #fff;
+}
+
+.main-heading:hover {
+  color: #d3d3d3;
+  font-family: 'Bree Serif';
+  font-weight: bold;
+}
+
+.main-heading-1 {
+  color: #ffffe0;
+  transform: scale(1.05);
+}
+
+.main-paragraph {
+  font-family: 'Roboto', serif;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #f5f5dc;
+  animation: fadeIn 3s ease-out;
+}
+
+.main-paragraph:hover {
+  font-family: 'Bree Serif';
+  transform: scale(1.05);
+}
+/* Remove Bootstrap button styles for specific buttons */
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff; /* Background color to match your design */
+  color: black; /* Text color */
+  /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #00008b; /* Background color on hover */
+  color: #87ceeb;
+  /* Text color on hover */
+  border: 3px solid #1e90ff;
+  font-weight: bold;
+  font-family: 'Bree Serif';
+  text-decoration: none; /* Remove text decoration on hover */
+}
+
+.gradient-green-button {
+  background-color: black;
+  border: none;
+  color: whitesmoke; /* Initial text color */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.3s, color 0.3s, text-decoration 0.3s;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Initial text decoration */
+}
+
+.card:hover .gradient-green-button {
+  background: radial-gradient(circle, #00ff00, #32cd32, #004d00);
+  font-family: 'Bree Serif';
+  transform: scale(2.01);
+  color: white; /* Ensure text color remains white on hover */
+  text-decoration: none; /* Ensure text decoration remains none on hover */
+}
+
+.about-section {
+  padding: 60px 0;
+  background: radial-gradient(ellipse, #87cefa, #00bfff, #4169e1);
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-heading-2 {
+  color: #ffffff !important;
+}
+
+.main-heading-2:hover {
+  color: #00008b !important;
+  font-family: 'Bree Serif';
+  transform: scale(2);
+  transition: text-shadow 0.3s ease;
+}
+.details {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Optional background color for visibility */
+  border-radius: 10px;
+  margin: 20px;
+}
+
+summary {
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff; /* Text color */
+  font-weight: bold;
+}
+
+.summary:hover {
+  color: #00008b;
+  font-family: 'Bree Serif';
+  transform: scale(1.6);
+  text-align: center;
+}
+
+.card-content {
+  /* Text color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for card effect */
+}
+
+@media screen and (min-width: 768px) {
+  .card-content {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* General container styles */
+.page-container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #87ceeb, #7b68ee);
+
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Projects section */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #2f2f2f;
+  border: none;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card:hover {
+  background-color: #00008b; /* Light blue on hover */
+  transform: scale(1.03);
+}
+.card:hover .card-title {
+  color: #00ff00;
+  font-family: 'Bree Serif';
+  transform: scale(1.02);
+}
+.project-heading {
+  color: white;
+}
+.project-heading:hover {
+  color: #00ff00;
+  font-family: 'Lobster';
+  transform: scale(1.8);
+}
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.card:hover .card-text {
+  font-family: 'Bree Serif';
+}
+
+#skillsSection {
+  padding: 2rem;
+  background: linear-gradient(to right, #9acd32, #002e00);
+  /* Light background color */
+}
+
+#skillsSection h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333; /* Dark text color */
+}
+
+#skillsSection h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #555; /* Slightly lighter dark color */
+}
+
+.list-group {
+  margin-bottom: 2rem;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 4px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  background-color: #fff; /* White background for items */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: pink; /* Light blue on hover */
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.list-group-item i {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.list-group-item span {
+  font-size: 1.2rem;
+  color: #333; /* Dark text color for list items */
+}
+
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #00ff00 !important; /* Dark text color */
+  font-family: 'Bree Serif'; /* Font family */
+}
+
+.skill-category h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444; /* Darker color for subcategories */
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-category ul li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  color: #666; /* Grey color for skills */
+}
