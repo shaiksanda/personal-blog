@@ -1,9 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-overlay {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+  }
+  .hero-overlay {
+    width: 50%;
+  }
+  .web-development {
+    width: 50%;
+  }
+}
+
 .web-development {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 body,
 html {
@@ -162,7 +185,7 @@ html {
 .card-body:hover .gradient-green-button {
   background: radial-gradient(circle, #00ff00, #32cd32, #004d00);
   font-family: 'Bree Serif';
-  transform: scale(2.01);
+  transform: scale(1.02);
 
   color: white; /* Ensure text color remains white on hover */
   text-decoration: none; /* Ensure text decoration remains none on hover */
@@ -275,13 +298,20 @@ summary {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 90% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .card {
-    flex-direction: row;
+    flex-direction: row !important;
   }
 }
 
@@ -313,8 +343,6 @@ summary {
   background-color: #00008b; /* Light blue on hover */
   transform: scale(1.03);
   border-radius: 10px;
-  margin: 10px;
-  text-align: center;
 }
 
 .card-content:hover {
@@ -326,6 +354,9 @@ summary {
 
 .image-website {
   border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-self: center;
 }
 
 #skillsSection {
