@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.highlight-name {
-  color: #00ff00;
+#highlight-name {
+  color: #191970;
   font-family: 'Bree Serif';
   font-weight: bold;
 }
+
 .mentor-container {
+  padding: 2rem;
   background: linear-gradient(
     to right,
     #87ceeb,
     #1e90ff
-  ); /* Sky Blue gradient */
-  color: #ffffff; /* White text color */
-  padding: 20px;
+  ); /* Sky Blue to Dodger Blue */
+
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+
+  width: 100%;
+  margin-left: 30px;
+
+  color: #ffffff;
 }
 
 .action {
@@ -23,6 +27,12 @@
   font-weight: bold;
   align-self: center;
   justify-content: center;
+}
+.action:hover {
+  font-family: 'Bree Serif';
+  color: #0000ff;
+  transform: scale(1.04);
+  font-size: 22px;
 }
 @media screen and (min-width: 786px) {
   .action {
@@ -38,6 +48,10 @@
 }
 .hero-overlay {
   width: 100%;
+}
+#highlight-name:hover {
+  color: gold;
+  transform: scale(1.04);
 }
 
 @media screen and (min-width: 768px) {
