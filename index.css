@@ -6,20 +6,24 @@
   font-weight: bold;
 }
 
+.mentor-container h2 {
+  margin-bottom: 20px;
+}
 .mentor-container {
-  padding: 2rem;
-  background: linear-gradient(
-    to right,
-    #87ceeb,
-    #1e90ff
-  ); /* Sky Blue to Dodger Blue */
+  color: white;
 
+  width: 95%;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
   border-radius: 10px;
+  background: linear-gradient(to right, skyblue, dodgerblue);
+}
 
-  width: 100%;
-  margin-left: 30px;
-
-  color: #ffffff;
+#highlight-name {
+  font-size: 2rem;
+  color: #007bff; /* Change this to match your design */
+  margin-bottom: 10px;
 }
 
 .action {
@@ -40,6 +44,13 @@
     font-size: 30px;
   }
 }
+.mentor-container p {
+  font-size: 1rem; /* Base font size for readability */
+  color: black; /* White color for better contrast */
+  font-weight: bold;
+  margin: 6px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
